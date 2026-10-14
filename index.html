@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171916" />
+    <meta
+      name="description"
+      content="Ahmed Farooq — software engineer in the making. A personal portfolio about systems, taste, and becoming."
+    />
+    <title>Ahmed Farooq — A Work in Progress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/assets/logo.png" sizes="512x512" />
+
+    <!-- ============ MOTION + INTERACTION LAYER ============ -->
+  </head>
+
+  <body>
+    <div class="progress" id="progress"></div>
+    <div class="page-glow" id="glow" aria-hidden="true"></div>
+
+    <header class="wrap nav">
+      <a class="brand" href="#home" aria-label="Ahmed Farooq home">
+        <img style="width: 130px" src="assets/logo.png" alt="" />
+      </a>
+      <nav class="navlinks" id="navlinks">
+        <a href="#about">Perspective</a><a href="#work">Selected work</a
+        ><a href="#journey">The journey</a><a href="#contact">Connect</a>
+      </nav>
+      <button
+        class="menu"
+        id="menu"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        Menu +
+      </button>
+    </header>
+    <main id="home">
+      <div class="hero-bg">
+        <canvas id="net" aria-hidden="true"></canvas>
+        <div class="wrap hero">
+          <div>
+            <div class="eyebrow mono fx delay-100">
+              <span class="signal"></span> Software Engineer · Faisalabad,
+              Pakistan
+            </div>
+            <h1 aria-label="Still in the making.">
+              <span class="ln" aria-hidden="true"
+                ><span class="ln-in delay-200">Still in the</span></span
+              ><span class="ln line2" aria-hidden="true"
+                ><span class="ln-in delay-380">making.</span></span
+              >
+            </h1>
+            <p class="hero-copy fx delay-700">
+              I'm <strong>Ahmed Farooq,</strong> an engineer in the making,
+              drawn to the logic beneath a system and the feeling of a thing
+              done well. I build, question, learn, and try to leave each project
+              a little better than I found it.
+            </p>
+            <div class="actions fx delay-850">
+              <a class="btn primary" href="#work"
+                >Selected work <span>↘</span></a
+              ><a class="btn secondary" href="#about"
+                >A little context <span>＋</span></a
+              >
+            </div>
+          </div>
+          <div
+            class="hero-visual reveal"
+            id="heroVisual"
+            role="img"
+            aria-label="Abstract editorial composition of an olive-toned architectural arch and rust-colored sun"
+          >
+            <span class="visual-note">FIELD NOTE / 001</span
+            ><span class="visual-number">31°25′ N — 73°05′ E</span>
+            <div class="visual-sun"></div>
+            <div class="visual-arch"></div>
+            <div class="visual-shadow"></div>
+            <div class="visual-caption">
+              <span>BUILT WITH INTENTION</span><span>ALWAYS IN PROGRESS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="marquee" id="marquee">
+          <div class="marquee-group">
+            <span>THINK CLEARLY <b>✳</b></span
+            ><span>BUILD WITH PURPOSE <b>✳</b></span
+            ><span>STAY CURIOUS <b>✳</b></span
+            ><span>KEEP YOUR WORD <b>✳</b></span>
+          </div>
+        </div>
+      </div>
+      <section id="about">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="mono">01 / Perspective</div>
+              <h2>There is a person<br />behind the process.</h2>
+            </div>
+            <p>
+              Engineering is what I'm learning to do. Curiosity, intention, and
+              steady progress are how I try to do it.
+            </p>
+          </div>
+          <div class="about-grid reveal">
+            <p class="manifesto">
+              I'd rather understand the thing than just learn how to
+              <em>make it work.</em>
+            </p>
+            <div class="about-body">
+              <p>
+                I'm studying Software Engineering at the University of
+                Agriculture, Faisalabad, and working toward becoming a capable
+                full-stack developer. I'm interested in how products fit
+                together: the interface, the API, the data model, the decisions
+                you only notice when something breaks.
+              </p>
+              <p>
+                I value fundamentals over shortcuts and honest learning over
+                pretending. AI is a powerful tool, but I believe the engineer
+                still needs to understand the system, the trade-offs, and the
+                consequences of a decision. If I don't know something, I'd
+                rather say so, learn it, and come back better prepared.
+              </p>
+              <p>
+                My taste outside code leans toward the understated: tailored
+                silhouettes, dark tones, cinematic imagery, music that doesn't
+                need words. I like design with restraint and character — not
+                empty minimalism, but details that have a reason to be there.
+              </p>
+            </div>
+          </div>
+          <div class="values">
+            <article class="value reveal">
+              <span class="num">01 / THINK</span>
+              <h3>Get to the root.</h3>
+              <p>
+                Learn the underlying idea, not only the tool that happens to
+                expose it.
+              </p>
+            </article>
+            <article class="value reveal">
+              <span class="num">02 / MAKE</span>
+              <h3>Make it real.</h3>
+              <p>
+                Build practical things, test the edges, and learn from what
+                doesn't work.
+              </p>
+            </article>
+            <article class="value reveal">
+              <span class="num">03 / BECOME</span>
+              <h3>Keep your standards.</h3>
+              <p>
+                Progress doesn't need to be loud to be meaningful. Let
+                consistency do its work.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="mono">02 / Selected work</div>
+              <h2>Ideas, put to work.</h2>
+            </div>
+            <p>
+              Projects that show the kinds of systems I like building: useful,
+              connected, and grounded in real engineering problems.
+            </p>
+          </div>
+          <div class="project-grid">
+            <article class="project reveal">
+              <div class="project-art">
+                <span class="index">01 / COLLABORATION</span>
+                <div class="word">NeuraTasks</div>
+                <div class="shape"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>NeuraTasks</h3>
+                  <span class="status">IN DEVELOPMENT</span>
+                </div>
+                <p>
+                  An AI-assisted collaboration platform concept with boards,
+                  task workflows, role-based access, activity summaries, and
+                  real-time team updates.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span><span class="tag">Node.js</span
+                  ><span class="tag">MongoDB</span
+                  ><span class="tag">WebSockets</span
+                  ><span class="tag">AI</span>
+                </div>
+              </div>
+            </article>
+            <article class="project reveal">
+              <div class="project-art">
+                <span class="index">02 / DIGITAL EXPERIENCE</span>
+                <div class="word">Nature's Crust</div>
+                <div class="shape"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Nature's Crust</h3>
+                  <span class="status">LIVE PROJECT</span>
+                </div>
+                <p>
+                  A bakery website with a clean browsing experience, deliberate
+                  visual design, and a modern React frontend.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span><span class="tag">Vite</span
+                  ><span class="tag">Tailwind CSS</span
+                  ><span class="tag">shadcn/ui</span>
+                </div>
+                <a
+                  class="project-link"
+                  href="https://natures-crust-webcraft.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit live site ↗</a
+                >
+              </div>
+            </article>
+            <article class="project reveal">
+              <div class="project-art">
+                <span class="index">03 / LOCATION + API</span>
+                <div class="word">Rider / Drive</div>
+                <div class="shape"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Rider-Drive</h3>
+                  <span class="status">FULL STACK</span>
+                </div>
+                <p>
+                  A ride-oriented app exploring how frontend flows, backend
+                  APIs, authentication, and location-based distance logic fit
+                  together.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span><span class="tag">Express</span
+                  ><span class="tag">MongoDB</span><span class="tag">JWT</span>
+                </div>
+              </div>
+            </article>
+            <article class="project reveal">
+              <div class="project-art">
+                <span class="index">04 / SEARCH + TRANSCRIPTION</span>
+                <div class="word">Recall</div>
+                <div class="shape"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Transcript Search</h3>
+                  <span class="status">EXPLORATION</span>
+                </div>
+                <p>
+                  A way to turn saved short-video links into searchable
+                  transcripts, making useful ideas easier to recover than
+                  scrolling through a feed.
+                </p>
+                <div class="tags">
+                  <span class="tag">Node.js</span
+                  ><span class="tag">Supabase</span
+                  ><span class="tag">Queues</span
+                  ><span class="tag">Transcription</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="journey">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="mono">03 / The journey</div>
+              <h2>Not finished. Not standing still.</h2>
+            </div>
+            <p>A direction, not a claim to have arrived.</p>
+          </div>
+          <div class="journey-grid">
+            <div class="reveal">
+              <p class="journey-copy">
+                My focus is to grow into a dependable full-stack engineer:
+                someone who can move from an idea to a thoughtful
+                implementation, explain the choices behind it, and keep learning
+                as the tools change.
+              </p>
+              <div class="belief">
+                <span class="mono">A principle I believe in</span>
+                <p>
+                  AI can speed up the work. Understanding is what lets you own
+                  it.
+                </p>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item reveal">
+                <time>FOUNDATION</time>
+                <div>
+                  <h3>Build strong fundamentals</h3>
+                  <p>
+                    Programming, problem-solving, data structures, and learning
+                    to reason through complexity.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item reveal">
+                <time>FULL STACK</time>
+                <div>
+                  <h3>Own the whole flow</h3>
+                  <p>
+                    React interfaces, APIs, databases, authentication, and the
+                    boundaries between them.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item reveal">
+                <time>SHARE</time>
+                <div>
+                  <h3>Write what I'm learning</h3>
+                  <p>
+                    Reflecting on engineering, AI productivity, and the
+                    long-term value of building skill.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item reveal">
+                <time>NEXT</time>
+                <div>
+                  <h3>Build with greater judgment</h3>
+                  <p>
+                    Deepen architecture and system design knowledge while
+                    shipping practical work.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <div class="contact-card reveal">
+            <div class="mono">04 / The next conversation</div>
+            <h2>Let's make something<br /><em>worth making.</em></h2>
+            <p>
+              I'm interested in thoughtful engineering, full-stack
+              opportunities, and people who enjoy asking better questions. If
+              something here resonates, let's connect.
+            </p>
+            <div class="contact-links">
+              <a
+                class="btn primary"
+                href="https://github.com/im-Ahmed"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub ↗</a
+              ><a
+                class="btn secondary"
+                href="https://www.linkedin.com/in/ahmed-farooq-09a6b2304"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <span
+        >© <span id="year"></span> <strong>Ahmed Farooq.</strong> A work in
+        progress.</span
+      ><span>Thoughtful by design. Still becoming.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
